@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/funciones.js"></script>
+</head>
+<body>
+    
+    <header>
+
+        <div class="contenedor menu">
+
+            <img class= "logo-1" src="imagenes/logo.svg" alt="">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagenes/menu.png"  class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                </div>
+                
+                <img class="logo-2" src="imagenes/logo.svg" alt="">
+
+                <div class="menu-2">
+                    <ul>
+                        <li> <a href="#">Horario</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="header-content contenedor">    <!--En este contenedor empieza la parte de slider de imagens pero por alguna razon que no sale como quiero ya que salen indibiduales en vez de agruparse-->
+
+            <div class="swiper mySwiper-1"> <!--swiper es la clase que se utiliza en las funciones de JavaScript para hacer un silder o carrusel-->
+                <div class="swiper-wrapper"> <!--swiper-wrapper es la clase que engloba todo el slide y fuera de esa clase es donde pongo los botones de next y prev, pero no aparecen-->
+
+                    <div class="swiper-slide"> <!--primer slide-->
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Other Planet </h1>
+                                <p>
+                                    Jugosa hamburguesa de res con queso cheddar, lechuga fresca, tomate, cebolla roja y nuestra salsa especial, todo en un pan esponjoso
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="boton-1">Comprar</a>
+                                    <a href="#" class="boton-1">Menu</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/slider1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="swiper-slide"> <!--segundo slide-->
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Burguer Full</h1>
+                                <p>
+                                    Deliciosa hamburguesa de res cubierta con queso derretido, crujiente tocino, cebolla caramelizada y salsa BBQ, servida en un pan brioche.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="boton-1">Comprar</a>
+                                    <a href="#" class="boton-1">Menu</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/slider2.png" alt="">
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="swiper-slide"> <!--tercer slide-->
+                        <div class="slider">
+                             <div class="slider-txt">
+                                    <h1>Big Snack</h1>
+                                    <p>
+                                        Sabrosa hamburguesa vegetariana hecha con garbanzos y espinacas, acompañada de aguacate, tomate, rúcula y mayonesa de ajo, en un pan integral.
+                                    </p>
+                                    <div class="botones">
+                                        <a href="#" class="boton-1">Comprar</a>
+                                        <a href="#" class="boton-1">Menu</a>
+                                    </div>
+                             </div>
+                                <div class="slider-img">
+                                    <img src="imagenes/slider3.png" alt="">
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div> <!--estos son los botnes del slider o carrusel pero no me aparecen y no encuentro el fallo-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <main class="productos"> <!--en este contenedor habra una seccion que tambien serivra para el JavaScript pero tampo se porque no termina de funcionar del todo-->
+        <div class="tabs contenedor">
+
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1"> <!--esta linea es para crear los botones y que tengan la capacidad de ser seleccionables y su estado cambien si clicas otro-->
+            <label for="tab1">Best Seller </label> <!--primer grupo-->
+
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+
+                                <div class="producto"> <!--primer producto-->
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food1.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Triple Burguer</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                        </div>
+
+                            <div class="swiper-slide"> <!--segundo producto-->
+                                <div class="producto">
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food2.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Clasica</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide"> <!--tercer producto-->
+                                <div class="producto">
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food3.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Original Burguer</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Veganas</label> <!--segundo grupo-->
+
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">                                               
+                            <div class="swiper-slide">
+
+                                <div class="producto"> <!--cuarto producto-->
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food4.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>BBQ Vegan</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide"> <!--quinto producto-->
+                                <div class="producto">
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food6.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Vegan Cheeseburguer</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide"> <!--sexto producto-->
+                                <div class="producto">
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food5.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Vegan Truffle</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">Edición Limitada</label> <!--tercer grupo-->
+
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <div class="producto"> <!--septimo producto-->
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food7.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Burguer Trufada</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="producto"> <!--octavo producto-->
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food8.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>BBQ Bacon</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="producto"> <!--noveo producto-->
+                                    <div class="producto-img">
+                                        <h4>Nuevo</h4>
+                                        <img src="imagenes/food9.png" alt="">  
+                                    </div>
+                                    <div class="producto-txt">
+                                        <h4>Cheese Burguer</h4>
+                                        <p>Calidad Premium</p>
+                                        <span class="precio">10€</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+
+                        <div class="swiper-button-next"></div> <!-- ninguno de estos botones me llego a funcionar-->
+                        <div class="swiper-button-prev"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="info contenedor"> <!--en este contenedor esta la seccion de informacion de la web donde hay un pequeñe texto y una iamgen de acompañamiento-->
+        <div class="info-img">
+            <img src="imagenes/info.png" alt="">
+        </div>
+
+        <div class="info-txt">
+            <h2>Informacion</h2>
+            <p> Nos apasiona crear las mejores hamburguesas para nuestros clientes. Utilizamos ingredientes frescos y de alta calidad para ofrecerte una experiencia única en cada bocado. Nuestras hamburguesas están hechas con carne 100% de res, pollo o opciones vegetarianas, cocinadas a la perfección y servidas con una variedad de ingredientes frescos y salsas caseras.
+            </p>
+            <a href="#" class="boton-2">Mas Informacion</a>
+
+        </div>
+
+    </section>
+
+    <section class="horario"> <!--en esta seccion se encuentra el horario-->
+
+        <div class="horario-info contenedor">
+            <h2>Horario</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Direccion</h4>
+                    <p>Calle Colon 27, Madrid</p>
+                </div>
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>Lunes a Viernes de 14:00 a 23:00 </p>
+                    <p>Sabados de 13:00 a 00:00 </p>
+                </div>
+                <div class="txt">
+                    <h4>Telefono</h4>
+                    <p> 969 123 456 </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer contenedor"> <!--en esta seccion se encuentra el footero-->
+
+        <img class="logo-2" src="imagenes/logo.svg" alt="">
+        <div class="links">
+            <h4>Información</h4>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Terminos y condicones de uso</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Empresa</h4>
+            <ul>
+                <li><a href="#">¿Como funciona?</a></li>
+                <li><a href="#">¿Quienes somos?</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Contacto</h4>
+            <ul>
+                <li><a href="#">Contacta con nosotros</a></li>
+                <li><a href="#">info@gmail.com</a></li>
+                <li><a href="#">969 123 456</a></li>              
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
