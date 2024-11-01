@@ -22,9 +22,9 @@
 
                 <div class="menu-1">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="#Inicio">Inicio</a> &nbsp;&nbsp; </li>
+                        <li><a href="#Informacion">Servicios</a> &nbsp;&nbsp; </li>
+                        <li><a href="#Productos">Productos</a> &nbsp;&nbsp; </li>
                     </ul>
                 </div>
                 
@@ -32,18 +32,17 @@
 
                 <div class="menu-2">
                     <ul>
-                        <li> <a href="#">Horario</a></li>
+                        <li> <a href="#Horario">Horario</a> &nbsp;&nbsp; </li>
                     </ul>
                 </div>
 
             </nav>
         </div>
 
-        <div class="header-content contenedor">    <!--En este contenedor empieza la parte de slider de imagens pero por alguna razon que no sale como quiero ya que salen indibiduales en vez de agruparse-->
+        <div class="header-content contenedor" id="Inicio">     <!--En este contenedor empieza la parte de slider de imagens-->
 
             <div class="swiper mySwiper-1"> <!--swiper es la clase que se utiliza en las funciones de JavaScript para hacer un silder o carrusel-->
-                <div class="swiper-wrapper"> <!--swiper-wrapper es la clase que engloba todo el slide y fuera de esa clase es donde pongo los botones de next y prev, pero no aparecen-->
-
+                <div class="swiper-wrapper" id="swiperWrapperAlex"> <!--swiper-wrapper es la clase que engloba todo el slide y fuera de esa clase es donde pongo los botones de next y prev, pero no aparecen-->
                     <div class="swiper-slide"> <!--primer slide-->
                         <div class="slider">
                             <div class="slider-txt">
@@ -99,25 +98,30 @@
                     </div>
 
                 </div>
-                <div class="swiper-button-next"></div> <!--estos son los botnes del slider o carrusel pero no me aparecen y no encuentro el fallo-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
+                <div class="swiper-button-next">
+                    <button onclick="goNext()"> &gt; </button>
+                </div>                                                    <!--estos son los botnes del slider o carrusel -->
+                <div class="swiper-button-prev">
+                    <button onclick="goPrev()"> &lt; </button>
+                </div>
         </div>
+    </div>
 
 
     </header>
 
 
-    <main class="productos"> <!--en este contenedor habra una seccion que tambien serivra para el JavaScript pero tampo se porque no termina de funcionar del todo-->
+    <main class="productos" id="Productos"> <!--en este contenedor habra una seccion que tambien serivra para el JavaScript -->
         <div class="tabs contenedor">
+
+            
 
             <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1"> <!--esta linea es para crear los botones y que tengan la capacidad de ser seleccionables y su estado cambien si clicas otro-->
             <label for="tab1">Best Seller </label> <!--primer grupo-->
 
             <div class="tab">
                 <div class="swiper mySwiper-2" id="swiper1">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper"  id="swiperWrapperAlex1">
                         <div class="swiper-slide">
 
                                 <div class="producto"> <!--primer producto-->
@@ -162,10 +166,15 @@
                             </div>
                         
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
 
                     </div>
+                    <div class="swiper-button-next">
+                        <button onclick="goNext1()"> &gt; </button>
+                    </div> 
+                    <div class="swiper-button-prev">
+                        <button onclick="goPrev1()"> &lt; </button>
+                    </div> 
+        
                 </div>
             </div>
 
@@ -174,7 +183,7 @@
 
             <div class="tab">
                 <div class="swiper mySwiper-2" id="swiper2">
-                    <div class="swiper-wrapper">                                               
+                    <div class="swiper-wrapper"  id="swiperWrapperAlex2">                                               
                             <div class="swiper-slide">
 
                                 <div class="producto"> <!--cuarto producto-->
@@ -217,13 +226,15 @@
                                     </div>
                                 </div>
                             </div>
-
-                        
-
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                         
                     </div>
+                    <div class="swiper-button-next">
+                        <button onclick="goNext2()"> &gt; </button>
+                    </div> 
+                    <div class="swiper-button-prev">
+                        <button onclick="goPrev2()"> &lt; </button>
+                    </div> 
+
                 </div>
             </div>
 
@@ -232,7 +243,7 @@
 
             <div class="tab">
                 <div class="swiper mySwiper-2" id="swiper3">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper"  id="swiperWrapperAlex3">
                             <div class="swiper-slide">
 
                                 <div class="producto"> <!--septimo producto-->
@@ -278,16 +289,21 @@
 
                         
 
-                        <div class="swiper-button-next"></div> <!-- ninguno de estos botones me llego a funcionar-->
-                        <div class="swiper-button-prev"></div>
                         
                     </div>
+                    <div class="swiper-button-next">
+                        <button onclick="goNext3()"> &gt; </button>
+                    </div> 
+                    <div class="swiper-button-prev">
+                        <button onclick="goPrev3()"> &lt; </button>
+                    </div> 
+
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="info contenedor"> <!--en este contenedor esta la seccion de informacion de la web donde hay un pequeñe texto y una iamgen de acompañamiento-->
+    <section class="info contenedor" id="Informacion"> <!--en este contenedor esta la seccion de informacion de la web donde hay un pequeñe texto y una iamgen de acompañamiento-->
         <div class="info-img">
             <img src="imagenes/info.png" alt="">
         </div>
@@ -302,7 +318,7 @@
 
     </section>
 
-    <section class="horario"> <!--en esta seccion se encuentra el horario-->
+    <section class="horario" id="Horario"> <!--en esta seccion se encuentra el horario-->
 
         <div class="horario-info contenedor">
             <h2>Horario</h2>
